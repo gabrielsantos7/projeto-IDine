@@ -39,6 +39,85 @@
 
     <main>
         <!-- Coloque o seu conteúdo aqui -->
+        <section id="section-pesquisa" class="section">
+            <div id="group-section">
+                <h2>Comida boa e entrega rápida? É no IDine!</h2>
+                <p class="subtitle">Experimente novos sabores. Receba no conforto de sua casa.</p>
+                <div class="search-group">
+                    <img src="../assets/img/icons/fork.png" alt="garfo e colher" id="icon-input">
+                    <form action="produtos.php" method="post">
+                        <input type="search" name="busca-comida" id="busca-comida" placeholder="o que você quer comer hoje?">
+                        <button type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="section-sugestion">
+            <img src="../assets/img/components/cafe-da-tarde.png" alt="café da tarde" id="img-sugestion" />
+            <div class="title-subtitle">
+              <h2 id="titulo"></h2>
+              <p id="corpo"></p>
+            </div>
+            <a href="index.html" id="btn-sugestions">ver sugestões</a>
+        </section>
+
+        <section id="section-cards">
+            <a href="index.html">
+              <div class="card hamburguer">
+                <div class="img"><span class="title">Restaurante</span></div>
+      
+                <div class="content">
+                  <span class="view">Ver Opções</span>
+                </div>
+              </div>
+            </a>
+      
+            <a href="index.html">
+              <div class="card cart">
+                <div class="img"><span class="title">Supermercado</span></div>
+      
+                <div class="content">
+                  <span class="view">Ver Lojas</span>
+                </div>
+              </div>
+            </a>
+      
+            <div class="card more" id="div-view-more">
+              <div class="img" id="img-view-more"></div>
+              <span class="title" id="span-more">Mais</span>
+      
+              <div class="content">
+                <span class="view" id="caption-more">Mostrar mais</span>
+              </div>
+            </div>
+        </section>
+
+        <section id="section-hidden">
+            <div class="hidden-container">
+                <div class="hidden-card" id="bebidas">
+                  <div class="hidden-img">
+                   
+                  </div>
+                  <span>Bebidas</span>
+                </div>
+    
+                <div class="hidden-card" id="farmacia">
+                  <div class="hidden-img">
+                   
+                  </div>
+                  <span>Farmácia</span>
+                </div>
+              
+                <div class="hidden-card" id="pet-shop">
+                  <div class="hidden-img">
+                   
+                  </div>
+                  <span>Pet-Shop</span>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <footer>
@@ -110,5 +189,7 @@
             &#169 2023 todos os direitos reservados
         </div>
     </footer>
+
+    <script src="../assets/js/script.js"></script>
 </body>
 </html>
