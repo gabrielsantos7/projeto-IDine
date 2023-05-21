@@ -1,6 +1,6 @@
 # Projeto-IDine🍔🛵
 
-Projeto final da primeira unidade na disciplina de Programação Web II, ministrada pelo professor [Thiago Miranda](https://github.com/mirandathiago "Github do professor Thiago").  Fizemos um conjunto de páginas que simula uma plataforma de delivery de alimentos, semelhante ao iFood.
+Projeto final da primeira unidade na disciplina de Programação Web II, ministrada pelo professor [Thiago Miranda](https://github.com/mirandathiago "Github do professor Thiago"). Fizemos um conjunto de páginas que simula uma plataforma de delivery de alimentos, semelhante ao iFood.
 
 ## Descrição 📝
 
@@ -10,7 +10,7 @@ O projeto consiste na construção de um site para empresa do ramo de delivery d
 
 Segue abaixo a estruturação de pastas, com o objetivo de facilitar a organização do projeto e sua manutenção. Logo, é muito importante saber sobre a organização para **não sair colocando arquivos no lugar errado.** A seguir está uma explicação sobre cada pasta principal e suas subpastas. Caso tenham alguma dúvida, me procurem antes de fazer qualquer modificação.
 
-```css
+```markdown
 projeto-idine/
 │
 ├── assets/
@@ -20,7 +20,7 @@ projeto-idine/
 │   │   ├── produtos.css  			⚙️ CSS específico da página de produtos
 │   │   ├── historia.css  			⚙️ CSS específico da página de história
 │   │   ├── cadastro.css  			⚙️ CSS específico da página de cadastro
-│   │   └── page4.css  				⚙️ CSS específico da página 4
+│   │   └── produto.css  			⚙️ CSS específico da página 4
 │   ├── js/
 │   │   ├── script.js  				⚙️ JavaScript principal do projeto
 │   │   └── produtos.js   			⚙️ JavaScript específico da página de produtos
