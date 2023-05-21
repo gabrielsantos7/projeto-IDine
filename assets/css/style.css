@@ -1,0 +1,416 @@
+@import url("https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,600;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap");
+
+:root {
+  --vermelho: #ea1d2c;
+  --branco-bg: #f7f7f7;
+  --cinza: #717171;
+  --verde: #b6d048;
+  --roxo: #8c60c5;
+  --amarelo: #f6d553;
+  --rosa: #f9879c;
+  --azul: #6bcded;
+  --preto: #0e0b0b;
+  --font-rubik: "Rubik", sans-serif;
+  --font-abeezee: "ABeeZee", sans-serif;
+  --font-courgette: "Courgette", cursive;
+  --font-inter: "Inter", sans-serif;
+}
+
+h2 {
+  font-family: var(--font-courgette);
+  color: var(--preto);
+  font-size: 2rem;
+  margin: 5px;
+}
+
+#busca-comida {
+  border: none;
+  outline: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  font-size: inherit;
+  color: inherit;
+  width: 25rem;
+  font-size: 1.125rem;
+}
+
+.subtitle {
+  color: var(--cinza);
+  font-family: var(--font-abeezee);
+  margin: 1rem 0;
+}
+
+#icon-input {
+  height: 1.5rem;
+  margin: 0.5rem;
+}
+
+#section-pesquisa {
+  background-color: var(--branco-bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 30vh;
+}
+
+#group-section {
+  text-align: center;
+  margin: 0 auto;
+  margin: 2rem 0 2rem 0;
+}
+
+.search-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid #cfcfcf;
+  border-radius: 4px;
+  margin: 5px;
+  box-shadow: 2px 2px 10px #ebdfdf;
+}
+
+.search-group form button {
+  background-color: var(--vermelho);
+  border-radius: 0px 4px 4px 0px;
+  outline: none;
+  padding: 1rem 2.5rem;
+  margin: 0;
+  border: none;
+  font-family: var(--font-inter);
+  font-size: 1rem;
+  color: #fff;
+}
+
+.search-group form button:hover {
+  transition: all 0.3s;
+  background-color: #e20a19;
+  cursor: pointer;
+}
+
+#section-sugestion {
+  display: flex;
+  background-color: #ea1d2c;
+  justify-content: space-between;
+  align-items: center;
+  height: 35vh;
+}
+
+#img-sugestion {
+  height: 35vh;
+}
+
+#corpo {
+  font-family: "ABeeZee", sans-serif;
+  font-size: 1rem;
+  color: white;
+}
+
+#titulo {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+#btn-sugestions {
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 1rem 2.5rem;
+  font-family: var(--font-inter);
+  font-size: 1rem;
+  color: var(--cinza);
+  font-weight: bold;
+  margin: 2rem;
+}
+
+#btn-sugestions:hover {
+  background-color: #e4e2e2;
+}
+
+.title-subtitle {
+  width: 50%;
+}
+
+/* * Cards animados */
+#section-cards {
+  width: 100%;
+  height: 45vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--branco-bg);
+}
+
+.card {
+  width: 250px;
+  height: 250px;
+  border-radius: 16px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s;
+  border: 1px solid #222;
+  margin: 20px;
+}
+
+.card .img {
+  display: flex;
+  justify-content: center;
+  align-items: last baseline;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.5s;
+  z-index: 2;
+  position: relative;
+  opacity: 0.8;
+}
+
+.hamburguer {
+  background-image: linear-gradient(#b6d048, #bed84b);
+}
+
+.cart {
+  background-image: linear-gradient(#8c60c5, #8e60ca);
+}
+
+.more {
+  background-image: linear-gradient(#ea1d2c, #ee1b29);
+}
+
+.hamburguer .img {
+  background-image: url("../img/products/hamburguer.png");
+  width: 250px;
+  height: 200px;
+}
+
+.cart .img {
+  background-image: url("../img/components/supermarket-cart.png");
+  width: 225px;
+  height: 225px;
+}
+
+.more .img {
+  background-image: url("../img/icons/down.png");
+  height: 175px;
+  width: 175px;
+}
+
+.hamburguer:hover .img {
+  width: 300px;
+  opacity: 1;
+}
+
+.cart:hover .img {
+  width: 250px;
+  opacity: 1;
+}
+
+.more:hover .img {
+  width: 200px;
+  opacity: 1;
+}
+
+.card .img span {
+  font-family: var(--font-rubik);
+  font-size: 24px;
+  font-weight: 200;
+  transition: all 0.5s;
+  padding: 5px;
+}
+
+.card:hover .img span {
+  transform: scale(1.1);
+  text-align: center;
+}
+
+.card .content {
+  height: 50px;
+  width: 100%;
+  padding: 10px 30px 30px 30px;
+  opacity: 0;
+  transition: all 0.5s;
+  transform: translateY(30px);
+  background-color: #7a7a7a;
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 5px;
+  border-top: 1px solid #222;
+}
+
+.card:hover .content {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card .content .title {
+  font-size: 24px;
+}
+
+#span-more {
+  font-family: var(--font-rubik);
+  font-size: 24px;
+  color: #fff;
+  font-weight: 100;
+  transition: all 0.5s;
+}
+
+.card:hover #span-more {
+  transform: scale(1.2);
+}
+
+.card .content .view {
+  font-family: var(--font-abeezee);
+  font-size: 20px;
+  color: #222;
+}
+
+.card .content .view:hover {
+  text-decoration: solid underline #222;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.rotate {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* * Section oculta */
+
+#section-hidden{
+    display: none;
+}
+
+.hidden-container {
+  width: 100%;
+  height: 35vh;
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--branco-bg);
+}
+
+.hidden-card {
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  cursor: pointer;
+  width: 200px;
+  height: 200px;
+  margin: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+#bebidas{
+    background-image: linear-gradient(var(--amarelo), #fcd94d);
+}
+
+#bebidas .hidden-img{
+    background-image: url("../img/products/coke.png");
+    width: 75%;
+    height: 75%;
+}
+
+#farmacia{
+    background-image: linear-gradient(var(--rosa), #e77f92);
+}
+
+#farmacia .hidden-img{
+    background-image: url("../img/components/first-aid-kit.png");
+    width: 75%;
+    height: 75%;
+}
+
+#pet-shop{
+    background-image: linear-gradient(var(--azul), #65bedb);
+}
+
+#pet-shop .hidden-img{
+    background-image: url("../img/components/dog-food.png");
+    width: 90%;
+    height: 50%;
+}
+
+.hidden-card:hover {
+ border: 1px solid black;
+}
+
+.hidden-card .hidden-img {
+  width: 100px;
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.5s;
+  position: relative;
+  opacity: 1;
+}
+
+.hidden-card:hover .hidden-img {
+  opacity: 0.4;
+}
+
+.hidden-card span {
+  text-transform: uppercase;
+  font-family: "Rubik", sans-serif;
+  font-weight: 600;
+  display: none;
+  transition: all 0.5s;
+  position: absolute;
+  z-index: 2;
+}
+
+.hidden-card:hover span {
+  font-size: 35px;
+  display: block;
+}
+
+.hidden-card .content {
+  padding: 0px 20px;
+  height: 0;
+  opacity: 0;
+  transition: all 0.5s;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  transform: translateY(30px);
+}
+
+.hidden-card:hover .content {
+  height: 260px;
+  padding: 20px;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hidden-card .content p {
+  margin: 0;
+}
+
+.hidden-card .content .title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.hidden-card .content .desc {
+  font-size: 14px;
+  font-weight: 100;
+  opacity: 0.8;
+  margin-top: 8px;
+}
