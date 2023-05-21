@@ -1,0 +1,293 @@
+/* * Esses imports são para fontes que iremos utilizar no header e no footer */
+@import url("https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,600;1,400&display=swap");
+
+:root {
+  /* * Cores gerais que serão utilizadas em muitas partes do site */
+  --vermelho: #ea1d2c;
+  --branco: #f7f7f7;
+  --cinza: #333;
+  /* * Fontes personalizadas */
+  --fonte-rubik: "Rubik", sans-serif;
+  --font-abeezee: "ABeeZee", sans-serif;
+  /* * Cores do footer */
+  --footer-preto: #0e0b0b;
+  --footer-cinza-escuro: #171717;
+  --footer-cinza-medio: #a8a29e;
+  --footer-branco: #f5f5f5;
+}
+/* * Zera algumas propriedades de todos os elementos */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+/* * Para deixar o header estático e conseguir usar o efeito no botão de cadastro, é necessário que o main tenha o posicionamento relativo, e defina uma margin-top da altura do header*/
+main {
+  position: relative;
+  margin-top: 15vh;
+}
+
+a{
+  text-decoration: none;
+}
+
+footer {
+  width: 100%;
+  color: var(--footer-branco);
+  font-family: "ABeeZee", sans-serif;
+  letter-spacing: 1px;
+}
+
+address {
+  line-height: 1.75rem;
+}
+/* * Estilização do header */
+#topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--vermelho);
+  height: 15vh;
+  padding: 1.5rem;
+  border-bottom: 1px solid #555;
+  /* * Para ficar estático na tela */
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+#h1-sumir {
+  display: none;
+}
+
+#topo #img-logo {
+  scale: 1;
+  transition: 0.3s;
+}
+
+#topo #img-logo:hover {
+  scale: 1.05;
+  transition: 0.3s;
+}
+
+#topo .btn-branco {
+  font-family: var(--fonte-rubik);
+  padding: 10px;
+  border-radius: 7px;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  background: none;
+  border: 2px solid #fff;
+  transition: color 0.4s linear;
+}
+
+#topo .btn-branco:hover {
+  cursor: pointer;
+  color: var(--cinza);
+}
+
+#topo .btn-branco::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  z-index: -1;
+  transition: transform 0.5s;
+  transform-origin: 0 0;
+  transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+  transform: scaleY(0);
+}
+
+#topo .btn-branco:hover::before {
+  transform: scaleY(1);
+}
+
+#topo .link-nav {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+#topo #menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: var(--fonte-rubik);
+  font-size: 20px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+
+.nav-list li {
+  letter-spacing: 1px;
+  margin-left: 35px;
+  transition: 0.2s;
+}
+
+.nav-list li:hover {
+  scale: 1.03;
+  transition: 0.2s;
+}
+
+/* * Estilização do footer */
+.footer-link {
+  text-decoration: none;
+}
+
+#footer_content {
+  background-color: var(--footer-cinza-escuro);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 3rem 1.5rem;
+}
+
+#footer_contacts h1 {
+  margin-bottom: 0.75rem;
+}
+
+#footer-logo {
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+#footer-logo:hover {
+  opacity: 1;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#footer_social_media {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+#footer_social_media .footer-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem;
+  width: 2.5rem;
+  color: var(--footer-branco);
+  border-radius: 50%;
+  transition: all 0.4s;
+}
+
+#footer_social_media .footer-link i {
+  font-size: 1.25rem;
+}
+
+#footer_social_media .footer-link:hover {
+  opacity: 0.8;
+}
+
+#instagram:hover {
+  background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+
+#facebook:hover {
+  background: #4267b3;
+}
+
+#whatsapp:hover {
+  background: #25d366;
+}
+
+#twitter:hover {
+  background: #1c93e4;
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  list-style: none;
+}
+
+.footer-list .footer-link {
+  color: var(--footer-cinza-medio);
+  transition: all 0.4s;
+}
+
+.footer-list .footer-link:hover {
+  color: var(--vermelho);
+}
+
+#footer_subscribe {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+#footer_subscribe p {
+  color: var(--footer-cinza-medio);
+}
+
+#input_group {
+  display: flex;
+  align-items: center;
+  background-color: var(--footer-preto);
+  border-radius: 4px;
+}
+
+#input_group input {
+  all: unset;
+  padding: 0.75rem;
+  width: 100%;
+}
+
+#input_group button {
+  background-color: var(--vermelho);
+  border: none;
+  color: var(--footer-branco);
+  padding: 0px 1.25rem;
+  font-size: 1.125rem;
+  height: 100%;
+  border-radius: 0px 4px 4px 0px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+#input_group button:hover {
+  opacity: 0.8;
+}
+
+#footer_copyright {
+  display: flex;
+  justify-content: center;
+  background-color: var(--footer-preto);
+  font-size: 0.9rem;
+  padding: 1.5rem;
+  font-weight: 100;
+}
+
+/* * Para deixar responsivo */
+@media screen and (max-width: 768px) {
+  #footer_content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  #footer_content {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 3rem 2rem;
+  }
+}
