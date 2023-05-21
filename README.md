@@ -20,7 +20,7 @@ projeto-idine/
 │   │   ├── produtos.css  			⚙️ CSS específico da página de produtos
 │   │   ├── historia.css  			⚙️ CSS específico da página de história
 │   │   ├── cadastro.css  			⚙️ CSS específico da página de cadastro
-│   │   └── produto.css  			⚙️ CSS específico da página 4
+│   │   └── produto.css  			⚙️ CSS específico da página de produtod
 │   ├── js/
 │   │   ├── script.js  				⚙️ JavaScript principal do projeto
 │   │   └── produtos.js   			⚙️ JavaScript específico da página de produtos
