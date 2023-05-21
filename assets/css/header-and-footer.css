@@ -56,7 +56,7 @@ address {
   background-color: var(--vermelho);
   height: 15vh;
   padding: 1.5rem;
-  border-bottom: 1px solid #555;
+  border-bottom: 1px solid var(--branco);
   /* * Para ficar estático na tela */
   position: fixed;
   width: 100%;
@@ -76,7 +76,7 @@ address {
 
 #topo #img-logo:hover {
   scale: 1.05;
-  transition: 0.3s;
+  transition: 0.2s;
 }
 
 #topo .btn-branco {
@@ -137,12 +137,10 @@ address {
 .nav-list li {
   letter-spacing: 1px;
   margin-left: 35px;
-  transition: 0.2s;
 }
 
 .nav-list li:hover {
   scale: 1.03;
-  transition: 0.2s;
 }
 
 /* * Estilização do footer */
@@ -266,10 +264,6 @@ address {
 
 #input_group button:hover {
   opacity: 0.8;
-}
-
-#txt-email{
-  display: none;
 }
 
 #footer_copyright {

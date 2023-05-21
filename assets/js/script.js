@@ -63,8 +63,12 @@ btnEmail.addEventListener("click", function () {
   if (inputValue != "") {
     const regex = /^\S+@\S+\.\S+$/;
     if (regex.test(inputValue)) {
-      txtEmail.style.display = "block";
+      txtEmail.innerText = "verifique sua caixa de entrada!✔️";
+    }else{
+      txtEmail.innerText = "digite um e-mail válido!❌";
     }
+  }else{
+    txtEmail.innerText = ""
   }
 });
 
