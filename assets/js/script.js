@@ -9,6 +9,10 @@ let spanMore = document.getElementById("span-more");
 let captionMore = document.getElementById("caption-more");
 // Para manipular os elementos da hidden-section
 let sectionHidden = document.getElementById("section-hidden");
+// Para manipular os elementos do botão do e-mail
+let txtEmail = document.getElementById("txt-email");
+let btnEmail = document.getElementById("btn-email");
+let inputEmail = document.getElementById("email");
 
 // atualizar a página com as sugestões apropriadas
 function atualizarSugestoes() {
@@ -52,7 +56,16 @@ divRotate.addEventListener("click", function () {
     captionMore.innerText = "Mostrar menos";
     sectionHidden.style.display = "block";
   }
+});
 
+btnEmail.addEventListener("click", function () {
+  let inputValue = inputEmail.value;
+  if (inputValue != "") {
+    const regex = /^\S+@\S+\.\S+$/;
+    if (regex.test(inputValue)) {
+      txtEmail.style.display = "block";
+    }
+  }
 });
 
 window.onload = function () {
