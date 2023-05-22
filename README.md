@@ -8,7 +8,7 @@ O projeto consiste na construção de um site para empresa do ramo de delivery d
 
 # Organização de pastas e arquivos📂
 
-Segue abaixo a estruturação de pastas, com o objetivo de facilitar a organização do projeto e sua manutenção. Logo, é muito importante saber sobre a organização para **não sair colocando arquivos no lugar errado.** A seguir está uma explicação sobre cada pasta principal e suas subpastas. Caso tenham alguma dúvida, me procurem antes de fazer qualquer modificação.
+Segue abaixo a estruturação de pastas, com o objetivo de facilitar a organização do projeto e sua manutenção. É muito importante saber sobre a organização para **não sair colocando arquivos no lugar errado.** A seguir está uma explicação sobre cada pasta principal e suas subpastas. Caso tenham alguma dúvida, me procurem antes de fazer qualquer modificação.
 
 ```markdown
 projeto-idine/
