@@ -432,6 +432,10 @@ a {
   cursor:pointer;
 }
 
+.estabelecimentos-container figure:hover figcaption{
+  text-decoration: underline solid #fff;
+}
+
 .estabelecimento {
   width: 150px;
   height: 150px;
@@ -441,12 +445,20 @@ a {
   border-radius: 10px;
   margin-top: 1rem;
   margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .estabelecimento:hover {
   background: #eeeeee;
   border: 2px solid #000000;
   cursor:pointer;
+}
+
+.estabelecimento img{
+  max-width: 90%;
+  max-height: 90%;
 }
 
 .txt-restaurantes{
@@ -457,4 +469,10 @@ a {
   font-family: var(--font-courgette);
   color: #fff;
   font-size: 2rem;
+}
+
+.fig-ver-mais{
+  font-family: var(--font-courgette);
+  font-size: 1.5rem;
+  text-align: center;
 }
