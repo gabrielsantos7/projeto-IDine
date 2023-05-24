@@ -1,3 +1,8 @@
+<?php
+    require_once '../services/data/supermercados.php';
+    require_once '../services/data/restaurantes.php';
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -32,7 +37,7 @@
                 </ul>
             </nav>
 
-            <a href="cadastro.html">
+            <a href="cadastro.php">
                 <div class="btn-branco">Cadastrar</div>
             </a>
     </header>
@@ -59,11 +64,11 @@
               <h2 id="titulo"></h2>
               <p id="corpo"></p>
             </div>
-            <a href="index.html" id="btn-sugestions">ver sugestões</a>
+            <a href="#" id="btn-sugestions">ver sugestões</a>
         </section>
 
         <section id="section-cards">
-            <a href="index.html">
+            <a href="#">
               <div class="card hamburguer">
                 <div class="img"><span class="title">Restaurante</span></div>
       
@@ -73,7 +78,7 @@
               </div>
             </a>
       
-            <a href="index.html">
+            <a href="#">
               <div class="card cart">
                 <div class="img"><span class="title">Supermercado</span></div>
       
@@ -123,18 +128,20 @@
                 <div class="txt-restaurantes">
                     <h3 class="h3-estabelecimentos">Os melhores <br>Restaurantes</h3>
                 </div>
-                <div class="estabelecimento">
-                    <img src="../assets/img/components/logo-caseirino.png" alt="Caseirino">
-                </div>
-                <div class="estabelecimento">
-                    <img src="../assets/img/components/gendai-logo.png" alt="Gandai">
-                </div>
-                <div class="estabelecimento">
-                    <img src="../assets/img/components/logo-catering.png" alt="Catering">
-                </div>
-                <div class="estabelecimento">
-                    <img src="../assets/img/components/logo-bayanos.png" alt="Bay'anos">
-                </div>
+                <?php
+                    foreach ($restaurantes as $i => $restaurante) {
+                ?>
+                    <a href="detalhamento.php?i=<?=$i?>">
+                    <div class="estabelecimento">
+                        <img src="<?=$restaurante["imagem"]?>" alt="<?=$restaurante["nome"]?>">
+                    </div>
+                </a>
+                <?php
+                        if($i >= 3){
+                            break;
+                        }
+                    }
+                ?>
 
                 <a href="#" title="Ver mais na Página Restaurantes">
                     <figure>
@@ -153,26 +160,20 @@
                 <div class="txt-supermercados">
                     <h3 class="h3-estabelecimentos">Os melhores <br>Supermercados</h3>
                 </div>
-                <a href="#">
+                <?php
+                    foreach ($supermercados as $i => $supermercado) {
+                ?>
+                    <a href="detalhamento.php?i=<?=$i?>">
                     <div class="estabelecimento">
-                        <img src="../assets/img/components/logo-superbarao.png" alt="Supermercado Super Barão">
+                        <img src="<?=$supermercado["imagem"]?>" alt="<?=$supermercado["nome"]?>">
                     </div>
                 </a>
-                <a href="#">
-                    <div class="estabelecimento">
-                        <img src="../assets/img/components/logo-tavin.png" alt="Supermercado Tavin">
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="estabelecimento">
-                        <img src="../assets/img/components/logo-doisamigos.png" alt="Supermercado Dois Amigos">
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="estabelecimento">
-                        <img src="../assets/img/components/logo-family.png" alt="Supermercado Family">
-                    </div>
-                </a>
+                <?php
+                        if($i >= 3){
+                            break;
+                        }
+                    }
+                ?>
                 <a href="#" title="Ver mais na Página Supermercados">
                     <figure>
                         <img src="../assets/img/icons/right-arrow.png" alt="ver mais">
