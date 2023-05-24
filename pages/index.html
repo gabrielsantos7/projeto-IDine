@@ -26,9 +26,9 @@
             </a>
             <nav id="menu">
                 <ul class="nav-list">
-                    <li><a href="" class="link-nav">Comidas e Produtos</a></li>
-                    <li><a href="" class="link-nav">Restaurantes e Supermercados</a></li>
-                    <li><a href="" class="link-nav">Sobre Nós</a></li>
+                    <li><a href="produtos.php" class="link-nav">Refeições e Produtos</a></li>
+                    <li><a href="produtos.php" class="link-nav">Restaurantes e Supermercados</a></li>
+                    <li><a href="historia.php" class="link-nav">Sobre Nós</a></li>
                 </ul>
             </nav>
 
