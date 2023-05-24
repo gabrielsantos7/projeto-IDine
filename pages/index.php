@@ -148,6 +148,7 @@
         </section>
 
         <section class="section-estabelecimentos">
+
             <div class="estabelecimentos-container">
                 <div class="txt-supermercados">
                     <h3 class="h3-estabelecimentos">Os melhores <br>Supermercados</h3>
