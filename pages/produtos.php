@@ -59,17 +59,19 @@
                 <div class="txt-restaurantes">
                     <h3 class="h3-estabelecimentos">Restaurantes</h3>
                 </div>
-                <div class="estabelecimento">
+                <div class="blocos">
+                    <div class="estabelecimento">
+                        
+                    </div>
+                    <div class="estabelecimento">
+                        
+                    </div>
+                    <div class="estabelecimento">
+                        
+                    </div>
+                    <div class="estabelecimento">
                     
-                </div>
-                <div class="estabelecimento">
-                    
-                </div>
-                <div class="estabelecimento">
-                    
-                </div>
-                <div class="estabelecimento">
-                    
+                    </div>
                 </div>
 
                 <a href="#">
@@ -84,17 +86,19 @@
                 <div class="txt-supermercados">
                     <h3 class="h3-estabelecimentos">Supermercados</h3>
                 </div>
-                <div class="estabelecimento">
+                <div class="blocos">
+                    <div class="estabelecimento">
+                        
+                    </div>
+                    <div class="estabelecimento">
+                        
+                    </div>
+                    <div class="estabelecimento">
+                        
+                    </div>
+                    <div class="estabelecimento">
                     
-                </div>
-                <div class="estabelecimento">
-                    
-                </div>
-                <div class="estabelecimento">
-                    
-                </div>
-                <div class="estabelecimento">
-                    
+                    </div>
                 </div>
 
                 <a href="#">
@@ -106,8 +110,8 @@
         
         <section class="section-anuncio">
             <div class="img-anuncio">
-                <img src="../assets/img/components/anuncio01.jpg" alt="Imagem de anuncio" id="anuncio01">
-                <img src="../assets/img/components/anuncio02.jpeg" alt="Imagem de anuncio" id="anuncio02">
+                <img src="../assets/img/components/anuncio01.jpg" alt="Imagem do anuncio" id="anuncio01">
+                <img src="../assets/img/components/anuncio02.jpeg" alt="Imagem do anuncio" id="anuncio02">
             </div>
         </section>
 
@@ -116,19 +120,20 @@
                 <div class="txt-refeicoes">
                     <h3 class="h3-estabelecimentos">Refeições</h3>
                 </div>
-                <div class="estabelecimento">
-                    
+                <div class="blocos">
+                    <div class="estabelecimento">
+                        
+                    </div>
+                    <div class="estabelecimento">
+                        
+                    </div>
+                    <div class="estabelecimento">
+                        
+                    </div>
+                    <div class="estabelecimento">
+                        
+                    </div>
                 </div>
-                <div class="estabelecimento">
-                    
-                </div>
-                <div class="estabelecimento">
-                    
-                </div>
-                <div class="estabelecimento">
-                    
-                </div>
-
                 <a href="#">
                     <img src="../assets/img/icons/right-arrow.png" alt="ver mais">
                 </a>
@@ -141,19 +146,20 @@
                 <div class="txt-produtos">
                     <h3 class="h3-estabelecimentos">Produtos</h3>
                 </div>
-                <div class="estabelecimento">
-                    
-                </div>
-                <div class="estabelecimento">
-                    
-                </div>
-                <div class="estabelecimento">
-                    
-                </div>
-                <div class="estabelecimento">
-                    
-                </div>
-
+                <div class="blocos">
+                    <div class="estabelecimento">
+                        
+                    </div>
+                    <div class="estabelecimento">
+                        
+                    </div>
+                    <div class="estabelecimento">
+                        
+                    </div>
+                    <div class="estabelecimento">
+                        
+                    </div>
+        </div>
                 <a href="#">
                     <img src="../assets/img/icons/right-arrow.png" alt="ver mais">
                 </a>
