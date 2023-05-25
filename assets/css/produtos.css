@@ -2,6 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,600;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Monomaniac+One&display=swap');
+
 
 :root {
   --vermelho: #ea1d2c;
@@ -17,24 +19,43 @@
   --font-abeezee: "ABeeZee", sans-serif;
   --font-courgette: "Courgette", cursive;
   --font-inter: "Inter", sans-serif;
+  --font-monomaniac: "Monomaniac One", sans-serif;
 }
 
 /*Section Comentário*/
 #section-comentario{
-    position: relative;
-    width: 560px;   
-    margin: 20px;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+#box-pesquisa{
+  /*width: 40%;
+  height: 20%;*/
+  position: relative;
+  width: 510px;
+  height: 260px;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  padding: 2%;
+  background-color: #b6d048;
+  border-radius: 15px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 #group-section{
+    /*width: 40%;
+    height: 20%;*/
     position: relative;
-    width: 560px;
+    width: 560;
     height: 260px;
-    left: 60px;
-    top: 5px;
+    margin-top: 3%;
+    margin-bottom: 3%;
     padding: 2%;
     background: var(--vermelho);
     border-radius: 15px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 #text-comentario{
@@ -119,12 +140,19 @@
 /*Section Anuncio*/
 .img-anuncio{
     display: flex;
+    justify-content:space-around;
+}
+
+#anuncio01:hover, #anuncio02:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 1s;
 }
 
 #anuncio01{
     position: relative;
-    width: 540px;
-    height: 270px;
+    width: 40%;
+    height: 20%;
 
     top: 0px;
     margin: 3%;
@@ -134,8 +162,8 @@
 
 #anuncio02{
     position: relative;
-    width: 540px;
-    height: 270px;
+    width: 40%;
+    height: 20%;
 
     top: 0px;
     margin: 3%;
@@ -202,9 +230,16 @@
 }   
 
 .h3-estabelecimentos{
-  font-family: var(--font-courgette);
+  font-family: var(--font-monomaniac);
   color: #d60606;
   font-size: 25px;
   width: 50px;
   margin: 0px;
+}
+
+.manual-btn {
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
 }

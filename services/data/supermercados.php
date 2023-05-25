@@ -37,55 +37,63 @@ $supermercados = [
         'endereco' => 'Avenida dos Compras, 123, Bairro Central',
         'telefone' => '(XX) XXXX-XXXX',
         'horario_atendimento' => 'Segunda a sábado, das 8h às 22h; domingo, das 8h às 20h',
-        'classificacao' => 'Supermercado de grande porte'
+        'classificacao' => 'Supermercado de grande porte',
+        'imagem' => '../assets/img/components/logo-family.png'
     ],
     [
         'nome' => 'Carrefour',
         'endereco' => 'Rua das Compras, 456, Centro',
         'telefone' => '(XX) XXXX-XXXX',
         'horario_atendimento' => 'Segunda a sábado, das 7h às 23h; domingo, das 8h às 22h',
-        'classificacao' => 'Supermercado de médio porte'
+        'classificacao' => 'Supermercado de médio porte',
+        'imagem' => '../assets/img/components/logo-family.png'
     ],
     [
         'nome' => 'Pão de Açúcar',
         'endereco' => 'Praça dos Alimentos, 789, Bairro Gourmet',
         'telefone' => '(XX) XXXX-XXXX',
         'horario_atendimento' => 'Todos os dias, das 7h às 23h',
-        'classificacao' => 'Supermercado de médio porte'
+        'classificacao' => 'Supermercado de médio porte',
+        'imagem' => '../assets/img/components/logo-family.png'
     ],
     [
         'nome' => 'Walmart (Grupo BIG)',
         'endereco' => 'Avenida das Ofertas, 987, Centro Comercial',
         'telefone' => '(XX) XXXX-XXXX',
         'horario_atendimento' => 'Segunda a sábado, das 8h às 22h; domingo, das 9h às 20h',
-        'classificacao' => 'Supermercado de médio porte'
+        'classificacao' => 'Supermercado de médio porte',
+        'imagem' => '../assets/img/components/logo-family.png'
     ],
     [
         'nome' => 'Atacadão',
         'endereco' => 'Rua dos Descontos, 654, Bairro Econômico',
         'telefone' => '(XX) XXXX-XXXX',
         'horario_atendimento' => 'Todos os dias, das 6h às 23h',
-        'classificacao' => 'Supermercado de médio porte'
+        'classificacao' => 'Supermercado de médio porte',
+        'imagem' => '../assets/img/components/logo-family.png'
     ],
     [
         'nome' => 'Assaí',
         'endereco' => 'Avenida dos Descontos, 321, Bairro Atacado',
         'telefone' => '(XX) XXXX-XXXX',
         'horario_atendimento' => 'Segunda a sábado, das 7h às 23h; domingo, das 8h às 20h',
-        'classificacao' => 'Supermercado de médio porte'
+        'classificacao' => 'Supermercado de médio porte',
+        'imagem' => '../assets/img/components/logo-family.png'
     ],
     [
         'nome' => 'Central das Carnes',
         'endereco' => 'Rua das Carnes, 543, Bairro Açougue',
         'telefone' => '(XX) XXXX-XXXX',
         'horario_atendimento' => 'Segunda a sábado, das 8h às 20h; domingo, das 8h às 14h',
-        'classificacao' => 'Mercadinho'
+        'classificacao' => 'Mercadinho',
+        'imagem' => '../assets/img/components/logo-family.png'
     ],
     [
         'nome' => 'Supermercados Dia',
         'endereco' => 'Avenida dos Descontos, 432, Bairro Economia',
         'telefone' => '(XX) XXXX-XXXX',
         'horario_atendimento' => 'Segunda a sábado, das 7h às 21h; domingo, das 8h às 18h',
-        'classificacao' => 'Mercadinho'
+        'classificacao' => 'Mercadinho',
+        'imagem' => '../assets/img/components/logo-family.png'
     ]   
 ];

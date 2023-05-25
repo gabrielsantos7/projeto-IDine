@@ -47,70 +47,80 @@ $restaurantes = [
         'endereco' => 'Avenida dos Sabores, 456, Centro Gourmet', 
         'telefone' => '(XX) XXXX-XXXX', 'horario_atendimento' => 
         'Terça a domingo, das 18h às 00h', 
-        'especializacao' => 'Fusão de sabores internacionais em pratos sofisticados' 
+        'especializacao' => 'Fusão de sabores internacionais em pratos sofisticados',
+        'imagem' => '../assets/img/components/logo-superbarao.png'
     ], 
     [ 
         'nome' => 'Cantinho Gourmet', 
         'endereco' => 'Praça dos Aromas, 789, Vila Gastronômica', 
         'telefone' => '(XX) XXXX-XXXX', 
         'horario_atendimento' => 'Quarta a domingo, das 12h às 15h e das 19h às 23h', 
-        'especializacao' => 'Culinária gourmet com ingredientes frescos e sazonais' 
+        'especializacao' => 'Culinária gourmet com ingredientes frescos e sazonais',
+        'imagem' => '../assets/img/components/logo-superbarao.png'
     ], 
     [ 
         'nome' => 'Bistrô Charme', 
         'endereco' => 'Rua das Flores, 234, Bairro Elegante', 
         'telefone' => '(XX) XXXX-XXXX', 
         'horario_atendimento' => 'Segunda a sábado, das 18h às 00h', 
-        'especializacao' => 'Bistrô francês com pratos clássicos e ambiente acolhedor'
+        'especializacao' => 'Bistrô francês com pratos clássicos e ambiente acolhedor',
+        'imagem' => '../assets/img/components/logo-superbarao.png'
     ], 
     [   
         'nome' => 'Delícias da Vovó', 
         'endereco' => 'Travessa dos Sabores, 567, Vila Retrô', 
         'telefone' => '(XX) XXXX-XXXX', 
         'horario_atendimento' => 'Terça a domingo, das 11h30 às 14h30', 
-        'especializacao' => 'Comida caseira com receitas tradicionais e afetivas' 
+        'especializacao' => 'Comida caseira com receitas tradicionais e afetivas',
+        'imagem' => '../assets/img/components/logo-superbarao.png'
     ],
     [   
         'nome' => 'Brasa & Grelha', 
         'endereco' => 'Avenida do Sabor, 890, Vila Churrasqueira', 
         'telefone' => '(XX) XXXX-XXXX', 
         'horario_atendimento' => 'Todos os dias, das 12h às 23h', 
-        'especializacao' => 'Churrascaria com cortes nobres e variedade de acompanhamentos' 
+        'especializacao' => 'Churrascaria com cortes nobres e variedade de acompanhamentos',
+        'imagem' => '../assets/img/components/logo-superbarao.png'
     ], 
     [   
         'nome' => 'Cozinha dos Sonhos', 
         'endereco' => 'Rua dos Sonhadores, 321, Bairro Imaginário', 
         'telefone' => '(XX) XXXX-XXXX', 
         'horario_atendimento' => 'Segunda a sexta, das 11h30 às 15h e das 18h às 23h; sábado e domingo, das 12h às  23h', 
-        'especializacao' => 'Cozinha contemporânea com pratos autorais e apresentação criativa' 
+        'especializacao' => 'Cozinha contemporânea com pratos autorais e apresentação criativa',
+        'imagem' => '../assets/img/components/logo-superbarao.png'
     ], 
     [   
         'nome' => 'Sabores Exóticos', 
         'endereco' => 'Praça das Especiarias, 987, Bairro Aventureiro', 
         'telefone' => '(XX) XXXX-XXXX', 
         'horario_atendimento' => 'Quarta a domingo, das 19h às 00h', 
-        'especializacao' => 'Cozinha internacional com pratos exóticos e sabores únicos' 
+        'especializacao' => 'Cozinha internacional com pratos exóticos e sabores únicos',
+        'imagem' => '../assets/img/components/logo-superbarao.png'
     ], 
     [   
         'nome' => 'À Moda Antiga', 
         'endereco' => 'Rua dos Clássicos, 543, Vila Vintage', 
         'telefone' => '(XX) XXXX-XXXX', 
         'horario_atendimento' => 'Segunda a sábado, das 12h às 15h e das 19h às 23h', 
-        'especializacao' => 'Cozinha tradicional com pratos clássicos e receitas familiares' 
+        'especializacao' => 'Cozinha tradicional com pratos clássicos e receitas familiares',
+        'imagem' => '../assets/img/components/logo-superbarao.png'
     ], 
     [   
         'nome' => 'Sabores do Mar', 
         'endereco' => 'Avenida dos Pescadores, 876, Vila Marítima', 
         'telefone' => '(XX) XXXX-XXXX', 
         'horario_atendimento' => 'Todos os dias, das 11h30 às 15h e das 18h às 23h', 
-        'especializacao' =>  'Frutos do mar frescos e pratos da culinária litorânea' 
+        'especializacao' =>  'Frutos do mar frescos e pratos da culinária litorânea',
+        'imagem' => '../assets/img/components/logo-superbarao.png'
     ], 
     [ 
         'nome' => 'Terraço Gastrobar', 
         'endereco' => 'Rua dos Sabores, 432, Bairro Gourmet', 
         'telefone' => '(XX) XXXX-XXXX', 
         'horario_atendimento' => 'Terça a domingo, das 17h às 00h', 
-        'especializacao' => 'Gastrobar com petiscos criativos, drinks especiais e vista panorâmica' 
+        'especializacao' => 'Gastrobar com petiscos criativos, drinks especiais e vista panorâmica',
+        'imagem' => '../assets/img/components/logo-superbarao.png'
     ]
     
 ];   

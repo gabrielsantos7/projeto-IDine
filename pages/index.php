@@ -26,11 +26,12 @@
 <body>
     <header id="topo">
         <h1 id="h1-sumir">IDine - Serviço de entrega</h1>
-            <a href="index.html">
+            <a href="index.php">
                 <img src="../assets/img/icons/logo-branca.png" alt="Logo da IDine" id="img-logo">
             </a>
             <nav id="menu">
                 <ul class="nav-list">
+                    <li><a href="index.php" class="link-nav">Home</a></li>
                     <li><a href="produtos.php" class="link-nav">Refeições e Produtos</a></li>
                     <li><a href="produtos.php" class="link-nav">Restaurantes e Supermercados</a></li>
                     <li><a href="historia.php" class="link-nav">Sobre Nós</a></li>

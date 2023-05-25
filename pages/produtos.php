@@ -1,3 +1,10 @@
+<?php
+    require_once '../services/data/supermercados.php';
+    require_once '../services/data/restaurantes.php';
+    require_once '../services/data/comidas.php';
+    require_once '../services/data/produtos.php';
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -21,11 +28,12 @@
 <body>
     <header id="topo">
         <h1 id="h1-sumir">IDine - Serviço de entrega</h1>
-            <a href="index.html">
+            <a href="index.php">
                 <img src="../assets/img/icons/logo-branca.png" alt="Logo da IDine" id="img-logo">
             </a>
             <nav id="menu">
                 <ul class="nav-list">
+                    <li><a href="index.php" class="link-nav">Home</a></li>
                     <li><a href="produtos.php" class="link-nav">Refeições e Produtos</a></li>
                     <li><a href="produtos.php" class="link-nav">Restaurantes e Supermercados</a></li>
                     <li><a href="historia.php" class="link-nav">Sobre Nós</a></li>
@@ -40,7 +48,7 @@
     <main>
         <!-- Coloque o seu conteúdo aqui -->
         <section id="section-comentario" class="section">
-            <div id="group-section">
+            <article id="group-section">
                 <h2 id="text-comentario">Comentários</h2>
                 <hr class="linha-personalizada">
                 <div class="coment-group">
@@ -50,8 +58,11 @@
                     <p id="text-avaliacao">5.0</p>
                 </div>
                     <p id="text-coment">"Acabei de ter uma experiência incrível no restaurante Caseirino que conheci aqui na plataforma. Não posso deixar de compartilhar o quanto estou impressionado com a qualidade da comida e o serviço impecável que recebi. O restaurante tem um ambiente acolhedor e elegante, perfeito para um jantar romântico ou uma celebração especial. 🗿🍷”</p>
+
+            </article>
+            <article id="box-pesquisa">
                 
-            </div>
+            </article>
         </section>
 
         <section class="section-estabelecimentos">
@@ -60,22 +71,23 @@
                     <h3 class="h3-estabelecimentos">Restaurantes</h3>
                 </div>
                 <div class="blocos">
-                    <div class="estabelecimento">
-                        
-                    </div>
-                    <div class="estabelecimento">
-                        
-                    </div>
-                    <div class="estabelecimento">
-                        
-                    </div>
-                    <div class="estabelecimento">
-                    
-                    </div>
+                        <?php
+                            foreach ($restaurantes as $i => $restaurante) {
+                        ?>
+                            <a href="../services/data/restaurantes.php?i=<?=$i?>">
+                            <div class="estabelecimento">
+                                <img src="<?=$restaurante["imagem"]?>" alt="<?=$restaurante["nome"]?>">
+                            </div>
+                        </a>
+                        <?php
+                                if($i >= 3){
+                                    break;
+                                }
+                            }
+                        ?>
                 </div>
-
                 <a href="#">
-                    <img src="../assets/img/icons/right-arrow.png" alt="ver mais">
+                    <img src="../assets/img/icons/arrow-rigth.png" alt="ver mais" class="manual-btn">
                 </a>
             </div>
 
@@ -87,22 +99,24 @@
                     <h3 class="h3-estabelecimentos">Supermercados</h3>
                 </div>
                 <div class="blocos">
-                    <div class="estabelecimento">
-                        
-                    </div>
-                    <div class="estabelecimento">
-                        
-                    </div>
-                    <div class="estabelecimento">
-                        
-                    </div>
-                    <div class="estabelecimento">
-                    
-                    </div>
+                    <?php
+                        foreach ($supermercados as $i => $supermercado) {
+                    ?>
+                        <a href="../services/data/supermercados.php?i=<?=$i?>">
+                        <div class="estabelecimento">
+                            <img src="<?=$supermercado["imagem"]?>" alt="<?=$supermercado["nome"]?>">
+                        </div>
+                    </a>
+                    <?php
+                            if($i >= 3){
+                                break;
+                            }
+                        }
+                    ?>
                 </div>
 
                 <a href="#">
-                    <img src="../assets/img/icons/right-arrow.png" alt="ver mais">
+                    <img src="../assets/img/icons/arrow-rigth.png" alt="ver mais" class="manual-btn">
                 </a>
             </div>
 
@@ -121,21 +135,23 @@
                     <h3 class="h3-estabelecimentos">Refeições</h3>
                 </div>
                 <div class="blocos">
-                    <div class="estabelecimento">
-                        
-                    </div>
-                    <div class="estabelecimento">
-                        
-                    </div>
-                    <div class="estabelecimento">
-                        
-                    </div>
-                    <div class="estabelecimento">
-                        
-                    </div>
+                    <?php
+                        foreach ($comidas as $i => $comida) {
+                    ?>
+                        <a href="../services/data/comidas.php?i=<?=$i?>">
+                        <div class="estabelecimento">
+                            <img src="<?=$comida["imagem"]?>" alt="<?=$comida["nome"]?>">
+                        </div>
+                    </a>
+                    <?php
+                            if($i >= 4){
+                                break;
+                            }
+                        }
+                    ?>
                 </div>
                 <a href="#">
-                    <img src="../assets/img/icons/right-arrow.png" alt="ver mais">
+                    <img src="../assets/img/icons/arrow-rigth.png" alt="ver mais" class="manual-btn">
                 </a>
             </div>
 
@@ -147,21 +163,23 @@
                     <h3 class="h3-estabelecimentos">Produtos</h3>
                 </div>
                 <div class="blocos">
-                    <div class="estabelecimento">
-                        
-                    </div>
-                    <div class="estabelecimento">
-                        
-                    </div>
-                    <div class="estabelecimento">
-                        
-                    </div>
-                    <div class="estabelecimento">
-                        
-                    </div>
-        </div>
+                    <?php
+                        foreach ($produtos as $i => $produto) {
+                    ?>
+                        <a href="../services/data/produtos.php?i=<?=$i?>">
+                        <div class="estabelecimento">
+                            <img src="<?=$produto["imagem"]?>" alt="<?=$produto["nome"]?>">
+                        </div>
+                    </a>
+                    <?php
+                            if($i >= 4){
+                                break;
+                            }
+                        }
+                    ?>
+                </div>
                 <a href="#">
-                    <img src="../assets/img/icons/right-arrow.png" alt="ver mais">
+                    <img src="../assets/img/icons/arrow-rigth.png" alt="ver mais" class="manual-btn">
                 </a>
             </div>
 
@@ -240,6 +258,6 @@
         </div>
     </footer>
 
-    <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/produtos.js"></script>
 </body>
 </html>
