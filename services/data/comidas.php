@@ -25,14 +25,6 @@ $comidas = [
         'imagem' => '../assets/img/products/sushi-misto.png'
     ],
     [
-        'nome' => 'Macarrão à Bolonhesa',
-        'preco' => 25.99,
-        'categoria' => 'Massas',
-        'ingredientes' => 'macarrão, molho de tomate, carne moída, cebola, alho, queijo parmesão',
-        'descricao' => 'Clássico macarrão à bolonhesa com molho de tomate rico, carne moída suculenta, cebola e alho, finalizado com queijo parmesão ralado.',
-        'imagem' => '../assets/img/products/macarrao-bolonhesa.png'
-    ],
-    [
         'nome' => 'Salada Caesar',
         'preco' => 19.99,
         'categoria' => 'Saladas',

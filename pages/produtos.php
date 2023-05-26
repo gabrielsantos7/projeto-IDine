@@ -113,9 +113,6 @@
                             </div>
                         </a>
                         <?php
-                                if($i >= 3){
-                                    break;
-                                }
                             }
                         ?>
                 </div>
@@ -199,7 +196,7 @@
                     <?php
                         foreach ($produtos as $i => $produto) {
                     ?>
-                        <a href="..detalhamento.php?i=<?=$i?>&array=produtos">
+                        <a href="detalhamento.php?i=<?=$i?>&array=produtos">
                         <div class="estabelecimento">
                             <img src="<?=$produto["imagem"]?>" alt="<?=$produto["nome"]?>">
                         </div>
