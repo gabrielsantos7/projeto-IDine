@@ -34,15 +34,54 @@
   /*width: 40%;
   height: 20%;*/
   position: relative;
-  width: 510px;
+  width: 550px;
   height: 260px;
   margin-top: 3%;
   margin-bottom: 3%;
   padding: 2%;
-  background-color: #b6d048;
+  background-color: #df9a41;
   border-radius: 15px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
+.result{
+  position: absolute;
+  left: 30px;
+  font-family: "Rubik", sans-serif;
+  font-size: 130%;
+  color: #ffffff;
+
+}
+
+.img{
+  position: relative;
+  width: 60%;
+  height: 100%;
+  left: 50%;
+  margin: auto;
+}
+
+.h2-card{
+  position: absolute;
+  font-family: "Rubik", sans-serif;
+  font-weight: 550;
+  left: 30px;
+  top: 20%;
+  color: #cc2b2b;
+  text-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
+}
+
+.p-card{
+  position: absolute;
+  left: 30px;
+  right: 235px;
+  top: 35%;
+  font-size: 18px;
+  font-family: "Rubik", sans-serif;
+  color: #F7F7F7;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
 
 #group-section{
     /*width: 40%;
@@ -63,9 +102,10 @@
     left: 30px;
     font-family: "Rubik", sans-serif;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 550;
     font-size: 25px;
     color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .linha-personalizada{
@@ -93,6 +133,7 @@
     left: 60px;
     top: 20px;
     color: #F7F7F7;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .coment-group #ft-usuario{
@@ -175,6 +216,7 @@
 .section-estabelecimentos {
   background-color: #F7F7F7;
   height: 30vh;
+  width: 100%;
   border-top: 2px solid var(--branco-bg);
   margin-bottom: 10px;
   margin-top: 10px;

@@ -60,40 +60,40 @@
                     <p id="text-coment">"Acabei de ter uma experiência incrível no restaurante Caseirino que conheci aqui na plataforma. Não posso deixar de compartilhar o quanto estou impressionado com a qualidade da comida e o serviço impecável que recebi. O restaurante tem um ambiente acolhedor e elegante, perfeito para um jantar romântico ou uma celebração especial. 🗿🍷”</p>
 
             </article>
-            <article id="box-pesquisa">
-            <?php
-                // * Se o usuário pesquisou algo na página principal
-                if (isset($_POST['busca-comida'])) {
-                    $pesquisa = $_POST['busca-comida'];
-                    $encontrado = false;
-                    $resultado = null;
+                <article id="box-pesquisa">
+                <?php
+                    // * Se o usuário pesquisou algo na página principal
+                    if (isset($_POST['busca-comida'])) {
+                        $pesquisa = $_POST['busca-comida'];
+                        $encontrado = false;
+                        $resultado = null;
 
-                    foreach ($comidas as $comida) {
-                        // * Se o que digitou é o próprio nome da comida ou está contida dentro dela
-                        if ($comida['nome'] === $pesquisa || stripos($comida['nome'], $pesquisa) !== false) {
-                            $encontrado = true;
-                            $resultado = $comida;
-                            break;
+                        foreach ($comidas as $comida) {
+                            // * Se o que digitou é o próprio nome da comida ou está contida dentro dela
+                            if ($comida['nome'] === $pesquisa || stripos($comida['nome'], $pesquisa) !== false) {
+                                $encontrado = true;
+                                $resultado = $comida;
+                                break;
+                            }
                         }
-                    }
 
-                    if ($encontrado) {
-                        echo "<h1>Resultado da Pesquisa</h1>";
-                        echo "<img src='" . $resultado['imagem'] . "' alt='" . $resultado['nome'] . "' class='img'>";
-                        echo "<h2 class='h2-card'>" . $resultado['nome'] . "</h2>";
-                        echo "<p class='p-card'>" . $resultado['descricao'] . "</p>";
-                    // * Caso tenha digitado algo, mas não foi encontrada nenhuma correspondência
-                    } else {
-                        echo "<h1>Nenhum resultado encontrado</h1>";
-                    }
+                        if ($encontrado) {
+                            echo "<h1 class= 'result'>Resultado da Pesquisa</h1>";
+                            echo "<img src='" . $resultado['imagem'] . "' alt='" . $resultado['nome'] . "' class='img'>";
+                            echo "<h2 class='h2-card'>" . $resultado['nome'] . "</h2>";
+                            echo "<p class='p-card'>" . $resultado['descricao'] . "</p>";
+                        // * Caso tenha digitado algo, mas não foi encontrada nenhuma correspondência
+                        } else {
+                            echo "<h1 class= 'result'>Nenhum resultado encontrado</h1>";
+                        }
 
-                // * Se não pesquisou, mostra um anúncio padrão
-                }else{
-                    echo "<img src='../assets/img/products/hamburguer.png' alt='Hambúrguer de carne' class='img'>";
-                    echo "<h2 class='h2-card'>Hambúrguer de carne</h2>";
-                    echo "<p class='p-card'>Delicioso hambúrguer feito com carne bovina suculenta, queijo derretido, alface fresca e molho especial, servido em um pão de hambúrguer macio. </p>";
-                }
-            ?>
+                    // * Se não pesquisou, mostra um anúncio padrão
+                    }else{
+                        echo "<img src='../assets/img/products/hamburguer.png' alt='Hambúrguer de carne' class='img'>";
+                        echo "<h2 class='h2-card'>Hambúrguer de carne</h2>";
+                        echo "<p class='p-card'>Delicioso hambúrguer feito com carne bovina suculenta, queijo derretido, alface fresca e molho especial, servido em um pão de hambúrguer macio. </p>";
+                    }
+                ?>
 
             </article>
         </section>
