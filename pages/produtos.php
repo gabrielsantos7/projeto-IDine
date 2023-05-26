@@ -61,7 +61,24 @@
 
             </article>
             <article id="box-pesquisa">
-                
+                <?php
+                    if (isset($_POST['busca-comida']) ) {
+                        $pesquisa = $_POST['busca-comida'];
+                        $encontrado = false;
+                    
+                        // Percorre o array procurando a primeira correspondência com o nome da comida
+                        foreach ($comidas as $comida) {
+                            if ($comida['nome'] === $pesquisa || strpos($comida['nome'], $pesquisa) !== false) {
+                                $encontrado = true;
+                                $resultado = $comida;
+                                break;
+                            }
+                        }
+
+                        echo $resultado;
+                    }
+                    
+                ?>
             </article>
         </section>
 
