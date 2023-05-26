@@ -33,13 +33,13 @@
 
 #burguer {
   border-radius: 6px;
-  height: 200px;
-  width: 200px;
-  margin: 20px;
+  height: 400px;
+  width: 400px;
+  margin-left: 50px;
 }
 
 .frase2 {
-  font-family: "Inder";
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 80px;
@@ -51,11 +51,13 @@
   letter-spacing: 0.035em;
 }
 #familia {
-  background: url(/assets/img/sobre/familia.png);
   border-radius: 6px;
+  height: 200px;
+  width: 200px;
+  margin: 20px;
 }
 .frase3 {
-  font-family: "Inder";
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 84px;
@@ -67,15 +69,16 @@
   letter-spacing: 0.035em;
 }
 #entregador {
-  background: url(/assets/img/sobre/entrega.png);
   border-radius: 6px;
+  height: 200px;
+  width: 200px;
+  margin: 20px;
 }
 #tela-cinza {
-
   background: #faf9f9;
 }
 #historia {
-  font-family: "Inder";
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 54px;
@@ -87,19 +90,19 @@
   letter-spacing: 0.035em;
 }
 #imagem-aluno1 {
-  background: url(/assets/img/sobre/gabriel.png);
+  background: url(../assets/img/sobre/gabriel.png);
   background-repeat: no-repeat;
 }
 #imagem-aluno2 {
-  background: url(/assets/img/sobre/sam.png);
+  background: url(../assets/img/sobre/sam.png);
   background-repeat: no-repeat;
 }
 #imagem-aluno3 {
-  background: url(/assets/img/sobre/lud.png);
+  background: url(../assets/img/sobre/lud.png);
   background-repeat: no-repeat;
 }
 #imagem-aluno4 {
-  background: url(/assets/img/sobre/claudio.png);
+  background: url(../assets/img/sobre/claudio.png);
   background-repeat: no-repeat;
 }
 

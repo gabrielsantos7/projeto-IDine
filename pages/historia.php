@@ -50,14 +50,14 @@
         <section>
             <div class="frase2">        
                 <p>Cada refeição é uma oportunidade de criar momentos especiais.</p>
-                <img id="familia"> 
+                <img src="../assets/img/sobre/familia.png"id="familia"> 
             </div>
         </section>
 
         <section>
             <div class="frase3">         
                 <p>Pediu? Entregou, estamos comprometidos em superar suas expectativas.</p>
-                <img id="entregador">
+                <img src="../assets/img/sobre/entrega.png" id="entregador">
             </div>
         </section>
 
