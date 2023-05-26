@@ -1,0 +1,164 @@
+.frase1{
+    position: absolute;
+   width: 587px;
+   height: 507px;
+   left: 100px;
+       top: 80px;
+   
+   
+   
+   
+   font-family: 'Inder';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 84px;
+   line-height: 94px;
+   
+   
+   display: flex;
+   align-items: center;
+   letter-spacing: 0.035em;
+   }
+   
+   #burguer{
+   position: absolute;
+   width: 434px;
+   height: 518px;
+   left: 850px;
+   top: 150px;
+   
+   background: url(/assets/img/sobre/burguer.png);
+   border-radius: 6px;
+   }
+   
+   .frase2{
+       position: absolute;
+   width: 853px;
+   height: 653px;
+   left: 490px;
+   top: 700px;
+   
+   font-family: 'Inder';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 80px;
+   line-height: 94px;
+   
+   
+   display: flex;
+   align-items: center;
+   text-align: right;
+   letter-spacing: 0.035em;
+   }
+   #familia{
+       position: absolute;
+   width: 468px;
+   height: 522px;
+   left: 57px;
+   top: 822px;
+   
+   background: url(/assets/img/sobre/familia.png);
+   border-radius: 6px;
+   }
+   .frase3{
+       position: absolute;
+   width: 718px;
+   height: 724px;
+   left: 105px;
+   top: 1350px;
+   
+   font-family: 'Inder';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 84px;
+   line-height: 94px;
+   /* or 112% */
+   
+   display: flex;
+   align-items: center;
+   letter-spacing: 0.035em;
+   }
+   #entregador{
+       position: absolute;
+   width: 459px;
+   height: 518px;
+   left: 904px;
+   top: 1487px;
+   
+   background: url(/assets/img/sobre/entrega.png);
+   border-radius: 6px;
+   }
+   #tela-cinza{
+   position: absolute;
+   width: 1440px;
+   height: 709px;
+   left: 0px;
+   top: 2286px;
+   background: #faf9f9;
+   }
+   #historia{
+    position: absolute;
+   width: 1350px;
+   height: 1175px;
+   left: 1px;
+   top: -250px;
+   
+   font-family: 'Inder';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 54px;
+   line-height: 80px;
+   
+   
+   display: flex;
+   align-items: center;
+   text-align: center;
+   letter-spacing: 0.035em;
+   }
+       #imagem-aluno1{
+    position: absolute;
+   width: 450px;
+   height: 426px;
+   left: 36px;
+   top: 3118px;
+   
+   background: url(/assets/img/sobre/gabriel.png);
+   background-repeat: no-repeat;
+       }
+       #imagem-aluno2{
+           position: absolute;
+   width: 450px;
+   height: 426px;
+   left: 833px;
+   top: 3118px;
+   
+   background: url(/assets/img/sobre/sam.png);
+   background-repeat: no-repeat;
+       }
+       #imagem-aluno3{
+           position: absolute;
+   width: 450px;
+   height: 426px;
+   left: 36px;
+   top: 3642px;
+   
+   background: url(/assets/img/sobre/lud.png);
+   background-repeat: no-repeat;
+       }
+       #imagem-aluno4{
+           position: absolute;
+   width: 450px;
+   height: 426px;
+   left: 833px;
+   top: 3642px;
+   
+   background: url(/assets/img/sobre/claudio.png);
+   background-repeat: no-repeat;
+       }
+       .img{
+           transition: transform 0.3s;
+           
+       }
+       .img:hover{
+           transform: scale(1.2);
+       }
