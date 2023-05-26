@@ -61,24 +61,40 @@
 
             </article>
             <article id="box-pesquisa">
-                <?php
-                    if (isset($_POST['busca-comida']) ) {
-                        $pesquisa = $_POST['busca-comida'];
-                        $encontrado = false;
-                    
-                        // Percorre o array procurando a primeira correspondência com o nome da comida
-                        foreach ($comidas as $comida) {
-                            if ($comida['nome'] === $pesquisa || strpos($comida['nome'], $pesquisa) !== false) {
-                                $encontrado = true;
-                                $resultado = $comida;
-                                break;
-                            }
-                        }
+            <?php
+                // * Se o usuário pesquisou algo na página principal
+                if (isset($_POST['busca-comida'])) {
+                    $pesquisa = $_POST['busca-comida'];
+                    $encontrado = false;
+                    $resultado = null;
 
-                        echo $resultado;
+                    foreach ($comidas as $comida) {
+                        // * Se o que digitou é o próprio nome da comida ou está contida dentro dela
+                        if ($comida['nome'] === $pesquisa || stripos($comida['nome'], $pesquisa) !== false) {
+                            $encontrado = true;
+                            $resultado = $comida;
+                            break;
+                        }
                     }
-                    
-                ?>
+
+                    if ($encontrado) {
+                        echo "<h1>Resultado da Pesquisa</h1>";
+                        echo "<img src='" . $resultado['imagem'] . "' alt='" . $resultado['nome'] . "' class='img'>";
+                        echo "<h2 class='h2-card'>" . $resultado['nome'] . "</h2>";
+                        echo "<p class='p-card'>" . $resultado['descricao'] . "</p>";
+                    // * Caso tenha digitado algo, mas não foi encontrada nenhuma correspondência
+                    } else {
+                        echo "<h1>Nenhum resultado encontrado</h1>";
+                    }
+
+                // * Se não pesquisou, mostra um anúncio padrão
+                }else{
+                    echo "<img src='../assets/img/products/hamburguer.png' alt='Hambúrguer de carne' class='img'>";
+                    echo "<h2 class='h2-card'>Hambúrguer de carne</h2>";
+                    echo "<p class='p-card'>Delicioso hambúrguer feito com carne bovina suculenta, queijo derretido, alface fresca e molho especial, servido em um pão de hambúrguer macio. </p>";
+                }
+            ?>
+
             </article>
         </section>
 
@@ -91,7 +107,7 @@
                         <?php
                             foreach ($restaurantes as $i => $restaurante) {
                         ?>
-                            <a href="../services/data/restaurantes.php?i=<?=$i?>">
+                            <a href="detalhamento.php?i=<?=$i?>&array=restaurantes">
                             <div class="estabelecimento">
                                 <img src="<?=$restaurante["imagem"]?>" alt="<?=$restaurante["nome"]?>">
                             </div>
@@ -119,7 +135,7 @@
                     <?php
                         foreach ($supermercados as $i => $supermercado) {
                     ?>
-                        <a href="../services/data/supermercados.php?i=<?=$i?>">
+                        <a href="detalhamento.php?i=<?=$i?>&array=supermercados">
                         <div class="estabelecimento">
                             <img src="<?=$supermercado["imagem"]?>" alt="<?=$supermercado["nome"]?>">
                         </div>
@@ -155,7 +171,7 @@
                     <?php
                         foreach ($comidas as $i => $comida) {
                     ?>
-                        <a href="../services/data/comidas.php?i=<?=$i?>">
+                        <a href="detalhamento.php?i=<?=$i?>&array=comidas">
                         <div class="estabelecimento">
                             <img src="<?=$comida["imagem"]?>" alt="<?=$comida["nome"]?>">
                         </div>
@@ -183,7 +199,7 @@
                     <?php
                         foreach ($produtos as $i => $produto) {
                     ?>
-                        <a href="../services/data/produtos.php?i=<?=$i?>">
+                        <a href="..detalhamento.php?i=<?=$i?>&array=produtos">
                         <div class="estabelecimento">
                             <img src="<?=$produto["imagem"]?>" alt="<?=$produto["nome"]?>">
                         </div>

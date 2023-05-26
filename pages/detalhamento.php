@@ -3,37 +3,6 @@
     require_once '../services/data/restaurantes.php';
     require_once '../services/data/comidas.php';
     require_once '../services/data/produtos.php';
-    /*
-    //Caso o índice i não tenha tenha sido passado pelo method GET execute...
-    if (!isset($_GET["i"])) {
-        // redideriona para index.php
-        header("location: index.php");
-        die; // mato a aplicação
-    }
-
-    $i = $_GET["i"];
-    if (isset($funcionarios[$i])) {
-        $f = $funcionarios[$i];
-        
-    }
-    
-    //echo "<pre>";
-    //print_r($f);
-    //echo "</pre>";
-    //die; 
-
-    <img src="../assets/img/products/coke.png" alt="Coke" class="img">
-                    <div id="column1">
-                        <h2 class="h2-card">Coca-cola</h2>
-                        <p class="p-card">Preço: R$ 3,50</p>
-                        <p class="p-card">Categoria: Bebida</p>
-                        <p class="p-card">Marca: Coca-Cola</p>
-                    </div>
-                    <div id="column2">
-                        <p class="p-card">Descrição: Uma bebida mundialmente famosa, reconhecida pelo seu sabor refrescante.</p>
-                    </div>
-    */
-
 ?>
 
 <!DOCTYPE html>
@@ -73,22 +42,87 @@
     <main>
         <section id="section-container">
             <div id="detalhamento-container">
-                <div id="group-img">
-                    <img src="../assets/img/products/coke.png" alt="coke" id="img-produto">
-                    <h2>Coca-Cola</h2>
-                </div>
+    <?php
+        // * Verifica se foram passados o nome do array e seu índice
+        if (isset($_GET['array']) && isset($_GET['i'])) {
+            $arrayName = $_GET['array'];
+            $index = $_GET['i'];
+
+            /* 
+               * Verifica se o array com o nome fornecido existe
+               * O $$ se refere ao nome da variável, e não a seu valor
+               * Logo, estou verificando se existe uma variável criada com o nome passado na URL 
+            */
+            if (isset($$arrayName)) {
+                // * Se existir, atribui seu nome à variável array
+                $array = $$arrayName;
+
+                // * Verifica se o índice existe no array
+                if (isset($array[$index])) {
+                    $item = $array[$index];
+                    $chaves = array_keys($item);
+                    $valores = array_values($item);
+
+                    /* 
+                     * Percorre todas os elementos realizando as formatações necessárias
+                     * O & permite que os próprios elementos do array sejam alterados durante a iteração
+                    */
+                    foreach ($chaves as &$chave) {
+                        switch ($chave) {
+                            case 'preco':
+                                $chave = 'Preço';
+                                break;
+                            case 'endereco':
+                                $chave = 'Endereço';
+                                break;
+                            case 'horario_atendimento':
+                                $chave = 'Horário de Atendimento';
+                                break;
+                            case 'especializacao':
+                                $chave = 'Especialização';
+                                break;
+                            case 'classificacao':
+                                $chave = 'Classificação';
+                                break;
+                            case 'descricao':
+                                $chave = 'Descrição';
+                                break;
+
+                            default:
+                                $chave = str_replace('_', ' ', $chave);
+                                $chave = ucfirst($chave);
+                                break;
+                        }
+
+                    }
+    ?>
+            <div id="group-img">
+                <img src="<?=$valores[5]?>" alt="$valores[0]" id="img-produto">
+                <h2 class="nome-principal"><?=$valores[0]?></h2>
+            </div>
                 
-                <div class="group-txt">
-                    <div class="column-1">
-                        <p>Preço: 4.99</p>
-                        <p>Categoria: Bebida</p>
-                        <p>Marca: Coca-Cola</p>
-                    </div>
-                    <div class="column-2">
-                        <p>Descrição: Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore sed ex dolore, amet nam aspernatur eum nulla corporis sit omnis magnam odit? Fugiat rem iste iure vel ab exercitationem iusto!</p>
-                    </div>
+            <div class="group-txt">
+                <div class="column-1">
+                    <p><?=$chaves[1]?> : <?=($chaves[1] === 'Preço' ? 'R$ ' . $valores[1] : $valores[1])?></p>
+                    <p><?=$chaves[2]?> : <?=$valores[2]?></p>
+                    <p><?=$chaves[3]?> : <?=$valores[3]?></p>
+                    <p><?=$chaves[4]?> : <?=$valores[4]?></p>
                 </div>
             </div>
+            <a href="produtos.php" id="btn-voltar">Voltar</a>
+            </div>
+            <?php
+                } else {
+                    echo "<h2 class='nome-principal'>Índice inválido para o array '$arrayName'.</h2>";
+                }
+            } else {
+                echo "<h2 class='nome-principal'>O array não existe.</h2>";
+            }
+        } else {
+            header("location: produtos.php");
+            die;
+        }
+        ?>
         </section>
         
     </main>
@@ -164,6 +198,5 @@
         </div>
     </footer>
 
-    <script src="../assets/js/script.js"></script>
 </body>
 </html>

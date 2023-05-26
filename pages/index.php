@@ -132,7 +132,7 @@
                 <?php
                     foreach ($restaurantes as $i => $restaurante) {
                 ?>
-                    <a href="detalhamento.php?i=<?=$i?>">
+                    <a href="detalhamento.php?i=<?=$i?>&array=restaurantes">
                     <div class="estabelecimento">
                         <img src="<?=$restaurante["imagem"]?>" alt="<?=$restaurante["nome"]?>">
                     </div>
@@ -144,9 +144,9 @@
                     }
                 ?>
 
-                <a href="#" title="Ver mais na Página Restaurantes">
+                <a href="produtos.php" title="Ver mais na Página Restaurantes">
                     <figure>
-                        <img src="../assets/img/icons/right-arrow.png" alt="ver mais">
+                        <img src="../assets/img/icons/more.png" alt="ver mais" class="btn-mais">
                         <figcaption class="fig-ver-mais">Ver tudo</figcaption>
                     </figure>
                     
@@ -164,7 +164,7 @@
                 <?php
                     foreach ($supermercados as $i => $supermercado) {
                 ?>
-                    <a href="detalhamento.php?i=<?=$i?>">
+                    <a href="detalhamento.php?i=<?=$i?>&array=supermercados">
                     <div class="estabelecimento">
                         <img src="<?=$supermercado["imagem"]?>" alt="<?=$supermercado["nome"]?>">
                     </div>
@@ -175,9 +175,9 @@
                         }
                     }
                 ?>
-                <a href="#" title="Ver mais na Página Supermercados">
+                <a href="produtos.php" title="Ver mais na Página Supermercados">
                     <figure>
-                        <img src="../assets/img/icons/right-arrow.png" alt="ver mais">
+                        <img src="../assets/img/icons/more.png" alt="ver mais" class="btn-mais">
                         <figcaption class="fig-ver-mais">Ver tudo</figcaption>
                     </figure>
                 </a>

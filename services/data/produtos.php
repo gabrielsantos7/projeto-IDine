@@ -35,7 +35,7 @@ $produtos = [
     ],
     [
         'nome' => 'Água Mineral',
-        'preco' => 1.50,
+        'preco' => 1.49,
         'categoria' => 'Bebidas',
         'descricao' => 'Água mineral natural, pura e refrescante.',
         'marca' => 'CristalFresh',
@@ -75,7 +75,7 @@ $produtos = [
     ],
     [
         'nome' => 'Café Solúvel',
-        'preco' => 9.50,
+        'preco' => 9.49,
         'categoria' => 'Café',
         'descricao' => 'Café solúvel de alta qualidade, com aroma intenso e sabor encorpado.',
         'marca' => 'CoffeeMaster',

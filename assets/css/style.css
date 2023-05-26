@@ -26,6 +26,13 @@ h2 {
   margin: 5px;
 }
 
+figure{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 #busca-comida {
   border: none;
   outline: none;
@@ -436,6 +443,10 @@ a {
   text-decoration: underline solid #fff;
 }
 
+.btn-mais{
+  filter: drop-shadow(0 0 1px #fff);
+}
+
 .estabelecimento {
   width: 150px;
   height: 150px;
@@ -475,4 +486,5 @@ a {
   font-family: var(--font-courgette);
   font-size: 1.5rem;
   text-align: center;
+  margin-top: 5px;
 }
