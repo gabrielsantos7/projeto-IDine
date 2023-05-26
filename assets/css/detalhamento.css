@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,600;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap");
+
+:root {
+  --vermelho: #ea1d2c;
+  --branco-bg: #f7f7f7;
+  --cinza: #717171;
+  --verde: #b6d048;
+  --roxo: #8c60c5;
+  --amarelo: #f6d553;
+  --rosa: #f9879c;
+  --azul: #6bcded;
+  --preto: #0e0b0b;
+  --font-rubik: "Rubik", sans-serif;
+  --font-abeezee: "ABeeZee", sans-serif;
+  --font-courgette: "Courgette", cursive;
+  --font-inter: "Inter", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#detalhamento-container {
+  width: 400px;
+  height: 400px;
+  background-color: rgb(255, 33, 33);
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+#group-img {
+  text-align: center;
+}
+
+#img-produto {
+  height: 200px;
+  width: 200px;
+  background-color: aliceblue;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.group-txt {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+}
+
+.column-1 {
+  max-width: 40%;
+  margin-right: 5px;
+}
+
+.column-2 {
+  max-width: 60%;
+  margin-left: 5px;
+}
