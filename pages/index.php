@@ -10,30 +10,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IDine-Home</title>
-    <!-- 
-        ? Como combinado, utilizaremos dois arquivos CSS diferentes:
-        * O primeiro deve ser o CSS da sua própria página (por exemplo, para a página produtos, tem o produtos.css)
-        * O segundo é o CSS do header e do footer, que é reutilizável em todo o projeto (todas as páginas terão o mesmo cabeçalho e rodapé, portanto, não há  anecessidade de criar cada um deles em cada arquivo CSS).
-    -->
+
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/header-and-footer.css">
-    <!-- Este link é para conseguir os ícones com a tag i (ícone do instagram, whatsapp, etc.) -->
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<!-- 
-    Todo o conteúdo, dividido em articles, será colocado dentro da tag main, que representa o bloco do conteúdo principal da página. O main fica entre o header e o footer. 
--->
+
 <body>
     <header id="topo">
         <h1 id="h1-sumir">IDine - Serviço de entrega</h1>
-            <a href="index.php">
+            <a href="historia.php">
                 <img src="../assets/img/icons/logo-branca.png" alt="Logo da IDine" id="img-logo">
             </a>
             <nav id="menu">
                 <ul class="nav-list">
                     <li><a href="index.php" class="link-nav">Home</a></li>
-                    <li><a href="produtos.php" class="link-nav">Refeições e Produtos</a></li>
-                    <li><a href="produtos.php" class="link-nav">Restaurantes e Supermercados</a></li>
+                    <li><a href="produtos.php#div-refeicoes" class="link-nav">Refeições e Produtos</a></li>
+                    <li><a href="produtos.php#div-restaurantes" class="link-nav">Restaurantes e Supermercados</a></li>
                     <li><a href="historia.php" class="link-nav">Sobre Nós</a></li>
                 </ul>
             </nav>
@@ -44,7 +38,6 @@
     </header>
 
     <main>
-        <!-- Coloque o seu conteúdo aqui -->
         <section id="section-pesquisa" class="section">
             <div id="group-section">
                 <h2>Comida boa e entrega rápida? É no IDine!</h2>
@@ -65,11 +58,11 @@
               <h2 id="titulo"></h2>
               <p id="corpo"></p>
             </div>
-            <a href="#" id="btn-sugestions">ver sugestões</a>
+            <a href="produtos.php" id="btn-sugestions">ver sugestões</a>
         </section>
 
         <section id="section-cards">
-            <a href="#">
+            <a href="produtos.php#div-restaurantes">
               <div class="card hamburguer">
                 <div class="img"><span class="title">Restaurante</span></div>
       
@@ -79,7 +72,7 @@
               </div>
             </a>
       
-            <a href="#">
+            <a href="produtos.php#div-supermercados">
               <div class="card cart">
                 <div class="img"><span class="title">Supermercado</span></div>
       
@@ -133,10 +126,10 @@
                     foreach ($restaurantes as $i => $restaurante) {
                 ?>
                     <a href="detalhamento.php?i=<?=$i?>&array=restaurantes">
-                    <div class="estabelecimento">
-                        <img src="<?=$restaurante["imagem"]?>" alt="<?=$restaurante["nome"]?>">
-                    </div>
-                </a>
+                        <div class="estabelecimento">
+                            <img src="<?=$restaurante["imagem"]?>" alt="<?=$restaurante["nome"]?>">
+                        </div>
+                    </a>
                 <?php
                         if($i >= 3){
                             break;
@@ -144,7 +137,7 @@
                     }
                 ?>
 
-                <a href="produtos.php" title="Ver mais na Página Restaurantes">
+                <a href="produtos.php#div-restaurantes" title="Ver mais na Página Restaurantes">
                     <figure>
                         <img src="../assets/img/icons/more.png" alt="ver mais" class="btn-mais">
                         <figcaption class="fig-ver-mais">Ver tudo</figcaption>
@@ -175,7 +168,7 @@
                         }
                     }
                 ?>
-                <a href="produtos.php" title="Ver mais na Página Supermercados">
+                <a href="produtos.php#div-supermercados" title="Ver mais na Página Supermercados">
                     <figure>
                         <img src="../assets/img/icons/more.png" alt="ver mais" class="btn-mais">
                         <figcaption class="fig-ver-mais">Ver tudo</figcaption>

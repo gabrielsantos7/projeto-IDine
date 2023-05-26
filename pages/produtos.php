@@ -28,19 +28,19 @@
 <body>
     <header id="topo">
         <h1 id="h1-sumir">IDine - Serviço de entrega</h1>
-            <a href="index.php">
+            <a href="historia.php">
                 <img src="../assets/img/icons/logo-branca.png" alt="Logo da IDine" id="img-logo">
             </a>
             <nav id="menu">
                 <ul class="nav-list">
                     <li><a href="index.php" class="link-nav">Home</a></li>
-                    <li><a href="produtos.php" class="link-nav">Refeições e Produtos</a></li>
-                    <li><a href="produtos.php" class="link-nav">Restaurantes e Supermercados</a></li>
+                    <li><a href="produtos.php#div-refeicoes" class="link-nav">Refeições e Produtos</a></li>
+                    <li><a href="produtos.php#div-restaurantes" class="link-nav">Restaurantes e Supermercados</a></li>
                     <li><a href="historia.php" class="link-nav">Sobre Nós</a></li>
                 </ul>
             </nav>
 
-            <a href="cadastro.html">
+            <a href="cadastro.php">
                 <div class="btn-branco">Cadastrar</div>
             </a>
     </header>
@@ -99,7 +99,7 @@
         </section>
 
         <section class="section-estabelecimentos">
-            <div class="estabelecimentos-container">
+            <div class="estabelecimentos-container" id="div-restaurantes">
                 <div class="txt-restaurantes">
                     <h3 class="h3-estabelecimentos">Restaurantes</h3>
                 </div>
@@ -127,7 +127,7 @@
         </section>
 
         <section class="section-estabelecimentos">
-            <div class="estabelecimentos-container">
+            <div class="estabelecimentos-container" id="div-supermercados">
                 <div class="txt-supermercados">
                     <h3 class="h3-estabelecimentos">Supermercados</h3>
                 </div>
@@ -163,7 +163,7 @@
         </section>
 
         <section class="section-estabelecimentos">
-            <div class="estabelecimentos-container">
+            <div class="estabelecimentos-container" id="div-refeicoes">
                 <div class="txt-refeicoes">
                     <h3 class="h3-estabelecimentos">Refeições</h3>
                 </div>
@@ -191,7 +191,7 @@
         </section>
 
         <section class="section-estabelecimentos">
-            <div class="estabelecimentos-container">
+            <div class="estabelecimentos-container" id="div-produtos">
                 <div class="txt-produtos">
                     <h3 class="h3-estabelecimentos">Produtos</h3>
                 </div>

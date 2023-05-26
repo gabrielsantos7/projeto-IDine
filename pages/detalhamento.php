@@ -3,6 +3,7 @@
     require_once '../services/data/restaurantes.php';
     require_once '../services/data/comidas.php';
     require_once '../services/data/produtos.php';
+    require_once '../util/util.php'
 ?>
 
 <!DOCTYPE html>
@@ -22,19 +23,19 @@
 <body>
 <header id="topo">
         <h1 id="h1-sumir">IDine - Serviço de entrega</h1>
-            <a href="index.php">
+            <a href="historia.php">
                 <img src="../assets/img/icons/logo-branca.png" alt="Logo da IDine" id="img-logo">
             </a>
             <nav id="menu">
                 <ul class="nav-list">
                     <li><a href="index.php" class="link-nav">Home</a></li>
-                    <li><a href="produtos.php" class="link-nav">Refeições e Produtos</a></li>
-                    <li><a href="produtos.php" class="link-nav">Restaurantes e Supermercados</a></li>
+                    <li><a href="produtos.php#div-refeicoes" class="link-nav">Refeições e Produtos</a></li>
+                    <li><a href="produtos.php#div-restaurantes" class="link-nav">Restaurantes e Supermercados</a></li>
                     <li><a href="historia.php" class="link-nav">Sobre Nós</a></li>
                 </ul>
             </nav>
 
-            <a href="cadastro.html">
+            <a href="cadastro.php">
                 <div class="btn-branco">Cadastrar</div>
             </a>
     </header>
@@ -67,43 +68,18 @@
                      * Percorre todas os elementos realizando as formatações necessárias
                      * O & permite que os próprios elementos do array sejam alterados durante a iteração
                     */
-                    foreach ($chaves as &$chave) {
-                        switch ($chave) {
-                            case 'preco':
-                                $chave = 'Preço';
-                                break;
-                            case 'endereco':
-                                $chave = 'Endereço';
-                                break;
-                            case 'horario_atendimento':
-                                $chave = 'Horário de Atendimento';
-                                break;
-                            case 'especializacao':
-                                $chave = 'Especialização';
-                                break;
-                            case 'classificacao':
-                                $chave = 'Classificação';
-                                break;
-                            case 'descricao':
-                                $chave = 'Descrição';
-                                break;
-
-                            default:
-                                $chave = str_replace('_', ' ', $chave);
-                                $chave = ucfirst($chave);
-                                break;
-                        }
-
+                    foreach ($chaves as &$chave) {                       
+                        $chave = formatarChave($chave);
                     }
     ?>
             <div id="group-img">
-                <img src="<?=$valores[5]?>" alt="$valores[0]" id="img-produto">
+                <img src="<?=$valores[5]?>" alt="<?=$valores[0]?>" id="img-produto">
                 <h2 class="nome-principal"><?=$valores[0]?></h2>
             </div>
                 
             <div class="group-txt">
                 <div class="column-1">
-                    <p><?=$chaves[1]?> : <?=($chaves[1] === 'Preço' ? 'R$ ' . $valores[1] : $valores[1])?></p>
+                    <p><?=$chaves[1]?> : <?=isPreco($chaves[1], $valores[1])?></p>
                     <p><?=$chaves[2]?> : <?=$valores[2]?></p>
                     <p><?=$chaves[3]?> : <?=$valores[3]?></p>
                     <p><?=$chaves[4]?> : <?=$valores[4]?></p>

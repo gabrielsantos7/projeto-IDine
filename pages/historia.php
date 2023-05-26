@@ -27,13 +27,13 @@
             <nav id="menu">
                 <ul class="nav-list">
                     <li><a href="index.php" class="link-nav">Home</a></li>
-                    <li><a href="produtos.php" class="link-nav">Refeições e Produtos</a></li>
-                    <li><a href="produtos.php" class="link-nav">Restaurantes e Supermercados</a></li>
+                    <li><a href="produtos.php#div-refeicoes" class="link-nav">Refeições e Produtos</a></li>
+                    <li><a href="produtos.php#div-restaurantes" class="link-nav">Restaurantes e Supermercados</a></li>
                     <li><a href="historia.php" class="link-nav">Sobre Nós</a></li>
                 </ul>
             </nav>
 
-            <a href="cadastro.html">
+            <a href="cadastro.php">
                 <div class="btn-branco">Cadastrar</div>
             </a>
     </header>
