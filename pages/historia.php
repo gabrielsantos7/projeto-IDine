@@ -48,9 +48,10 @@
         </section>
 
         <section>
-            <div class="frase2">        
+            <div class="frase2">  
+            <img src="../assets/img/sobre/familia.png" id="familia">      
                 <p>Cada refeição é uma oportunidade de criar momentos especiais.</p>
-                <img src="../assets/img/sobre/familia.png"id="familia"> 
+                 
             </div>
         </section>
 
@@ -64,22 +65,32 @@
         <section id="tela-cinza">
             <p id="historia">O iDine é uma plataforma inovadora que conecta usuários aos melhores restaurantes da cidade. Com uma interface amigável, oferece variedade de opções gastronômicas, avaliações de clientes e a possibilidade de compartilhar experiências. Descubra novos sabores e faça parte de uma comunidade apaixonada pela culinária.</p>
         </section>
-
+        <div class="row">
+            <div class="column">
         <a href="https://www.instagram.com/gabriel.santos65/">
-            <section id="imagem-aluno1" class="img"></section>
+            <section id="imagem-aluno1" class="img"><img src="../assets/img/sobre/gabriel.png"></section>
         </a>
-
+          </div>
+          <div class="column">
         <a href="https://www.instagram.com/sam.szmr/">
-            <section id="imagem-aluno2" class="img"></section>
+            <section id="imagem-aluno2" class="img"><img src="../assets/img/sobre/sam.png"></section>
         </a>
-
+    </div>
+    </div>
+    <div class="row">
+        <div class="column">
         <a href="https://www.instagram.com/_milaabrito/">
-            <section id="imagem-aluno3" class="img"></section>
+            <section id="imagem-aluno3" class="img"><img src="../assets/img/sobre/lud.png"></section>
         </a>
+      </div>
+      <div class="column">
         <a href="https://www.instagram.com/clmarqs/">
-            <section id="imagem-aluno4" class="img"></section>
+            <section id="imagem-aluno4" class="img"><img src="../assets/img/sobre/claudio.png"></section>
         </a>
-        
+    </div>
+    </div>
+    
+    
     </main>
 
     <footer>

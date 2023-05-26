@@ -33,9 +33,13 @@
 
 #burguer {
   border-radius: 6px;
-  height: 400px;
-  width: 400px;
-  margin-left: 50px;
+  margin: 30px;
+  margin-top: 200px;
+  padding: 30px;
+  
+  
+  
+ 
 }
 
 .frase2 {
@@ -52,9 +56,8 @@
 }
 #familia {
   border-radius: 6px;
-  height: 200px;
-  width: 200px;
-  margin: 20px;
+  margin-top: 200px;
+  margin-left: 100px;
 }
 .frase3 {
   font-family: "Inter", sans-serif;
@@ -70,12 +73,15 @@
 }
 #entregador {
   border-radius: 6px;
-  height: 200px;
-  width: 200px;
-  margin: 20px;
+  margin-top: 300px;
+  margin-bottom: 300px;
+  margin-left: 300px;
 }
 #tela-cinza {
-  background: #faf9f9;
+  background: #eeecec;
+  margin-bottom: 50px;
+  
+
 }
 #historia {
   font-family: "Inter", sans-serif;
@@ -90,25 +96,43 @@
   letter-spacing: 0.035em;
 }
 #imagem-aluno1 {
-  background: url(../assets/img/sobre/gabriel.png);
+  margin: 20px;
   background-repeat: no-repeat;
 }
 #imagem-aluno2 {
-  background: url(../assets/img/sobre/sam.png);
+  margin: 20px;
+  float:right;
+
   background-repeat: no-repeat;
+  
 }
 #imagem-aluno3 {
-  background: url(../assets/img/sobre/lud.png);
+  margin: 20px;
   background-repeat: no-repeat;
 }
 #imagem-aluno4 {
-  background: url(../assets/img/sobre/claudio.png);
+  margin: 20px;
+  float:right;
+  
   background-repeat: no-repeat;
 }
 
 .img {
   transition: transform 0.3s;
+  
+
 }
 .img:hover {
   transform: scale(1.2);
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
