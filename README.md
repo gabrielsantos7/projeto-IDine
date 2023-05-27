@@ -4,78 +4,64 @@ Projeto final da primeira unidade na disciplina de Programação Web II, ministr
 
 ## Descrição 📝
 
-O projeto consiste na construção de um site para empresa do ramo de delivery de alimentos, inspirada no iFood. O objetivo principal do projeto é exibir os produtos utilizando PHP por meio de arrays multidimensionais e associativos, assim como a construção de uma página mais detalhada sobre cada produto.
+O Projeto-IDine consiste em um site para a empresa de delivery de alimentos IDine, inspirada no iFood. O objetivo principal é exibir os produtos utilizando PHP por meio de arrays multidimensionais e associativos. O site possui as seguintes funcionalidades:
 
-# Organização de pastas e arquivos📂
+* Permitir o usuário pesquisar na página principal o nome de alguma comida, e informar se há alguma correspondência no array.
+* Mostrar um item específico, independentemente do array a que pertence.
+* Listar todos os itens dos arrays usando o `foreach`.
+* Atualizar a sugestão de refeição na página principal de acordo com o horário.
+* Página de cadastro com validação no formulário.
 
-Segue abaixo a estruturação de pastas, com o objetivo de facilitar a organização do projeto e sua manutenção. É muito importante saber sobre a organização para **não sair colocando arquivos no lugar errado.** A seguir está uma explicação sobre cada pasta principal e suas subpastas. Caso tenham alguma dúvida, me procurem antes de fazer qualquer modificação.
+## Organização de pastas e arquivos📂
+
+Segue abaixo a estruturação de pastas, com o objetivo de facilitar a organização do projeto e sua manutenção. Os arquivos já estão organizados por ordem alfabética.
 
 ```markdown
 projeto-idine/
 │
 ├── assets/
 │   ├── css/
-│   │   ├── style.css  				⚙️ CSS principal do projeto
-│   │   ├── header-and-footer.css  		⚙️ CSS reutilizável para o cabeçalho e rodapé
-│   │   ├── produtos.css  			⚙️ CSS específico da página de produtos
-│   │   ├── historia.css  			⚙️ CSS específico da página de história
 │   │   ├── cadastro.css  			⚙️ CSS específico da página de cadastro
-│   │   └── produto.css  			⚙️ CSS específico da página de produtod
-│   ├── js/
-│   │   ├── script.js  				⚙️ JavaScript principal do projeto
-│   │   └── produtos.js   			⚙️ JavaScript específico da página de produtos
-│   └── img/
-│       ├── icons/   				🖼️ Pasta para ícones e logos
-│       ├── products/     			🖼️ Pasta para imagens dos produtos
-│       └── components/   			🖼️ Pasta para os componentes estáticos do site
+│   │   ├── detalhamento.css  			⚙️ CSS específico da página de detalhamento
+│   │   ├── header-and-footer.css  		⚙️ CSS reutilizável para o cabeçalho e rodapé
+│   │   ├── historia.css  			⚙️ CSS específico da página de história
+│   │   ├── produtos.css  			⚙️ CSS específico da página de produtos
+│   │   └── style.css  				⚙️ CSS principal do projeto
+│   │   
+│   ├── img/
+│   │   ├── components/   			🖼️ Pasta para os componentes estáticos do site
+│   │   ├── icons/   				🖼️ Pasta para ícones e logos
+│   │   ├── products/ 				🖼️ Pasta para imagens dos produtos
+│   │   └── sobre/    				🖼️ Imagens da página historia.php
+│   │  
+│   └── js/
+│       ├── form.js  				⚙️ JavaScript da página cadastro
+│       ├── produtos.js  			⚙️ JavaScript da página produtos
+│       └── script.js				⚙️ JavaScript principal do projeto
 │
 ├── pages/
-│   ├── index.php     				📄 Página principal do projeto
-│   ├── produtos.php     			📄 Página de exibição dos produtos
-│   ├── historia.php     			📄 Página sobre a história da empresa
 │   ├── cadastro.php     			📄 Página de cadastro
-│   └── produto.php     			📄 Página de exibição individual de um produto
+│   ├── detalhamento.php     			📄 Página de exibição individual de um item
+│   ├── historia.php     			📄 Página sobre a história da empresa
+│   ├── index.php     				📄 Página principal do projeto
+│   └── produtos.php     			📄 Página de exibição dos produtos
 │
 ├── services/
 │   └── data/
-│       ├── produtos.php  			🗃️ Array associativo de produtos
-│       ├── comidas.php 			🗃️ Array associativo de comidas
-│       ├── supermercados.php  			🗃️ Array associativo de supermercados
-│       └── restaurantes.php  			🗃️ Array associativo de restaurantes
+│       ├── comidas.php 				🗃️ Array associativo de comidas
+│       ├── produtos.php  				🗃️ Array associativo de produtos
+│       ├── restaurantes.php  				🗃️ Array associativo de restaurantes
+│       └── supermercados.php  				🗃️ Array associativo de supermercados
 │
 ├── util/
-│   └── utils.php     				🔧 Funções utilitárias do projeto
+│   └── utils.php     					🔧 Funções utilitárias do projeto
 │
-└── README.md         				📖 Arquivo de documentação do projeto
+└── README.md         					📖 Arquivo de documentação do projeto
 ```
-
-## 📁 assets
-
-A pasta `assets` contém os arquivos estáticos do projeto, como imagens, arquivos CSS e JavaScript e fontes. São todos os arquivos adicionais que a página precisa para funcionar corretamente. Estes são agrupados em subpastas, de acordo com seu tipo:
-
-### 📁 css
-
-Arquivos CSS utilizados pelo projeto, divididos por página, e um arquivo principal (`style.css`) que reúne estilos compartilhados.
-
-### 📁 js
-
-Arquivos JavaScript utilizados pelo projeto, divididos por página, e um arquivo principal (`script.js`) que reúne funções compartilhadas.
-
-### 📁 img
-
-Imagens utilizadas pelo projeto, divididas por tipo: ícones e logos na pasta `icons/`, imagens de produtos na pasta `products/`, e outros componentes na pasta `components/`.
-
-## pages📄
-
-A pasta `pages` contém as páginas do projeto, separadas em arquivos PHP ou HTML.
-
-## util🛠️
-
-A pasta `util` contém funções utilitárias do projeto, se necessário.
 
 ## Como Executar o Projeto ▶️
 
-Para executar o projeto iDine, siga as instruções abaixo:
+Para executar o Projeto-IDine, siga as instruções abaixo:
 
 1. Faça o download dos arquivos do projeto para o seu computador.
 2. Configure um ambiente de desenvolvimento PHP, como o XAMPP ou WAMP, para executar o projeto localmente.
@@ -85,3 +71,9 @@ Para executar o projeto iDine, siga as instruções abaixo:
 ## Licença 📜
 
 Este projeto está licenciado sob a [Licença MIT](https://opensource.org/licenses/MIT). Consulte o link para obter mais informações.
+
+## Imagens de algumas páginas🖼️
+
+![Página Principal](https://i.postimg.cc/CKLr6MK7/IDine-Home.png)
+
+![Página Produtos](https://i.postimg.cc/RFWs4PKn/IDine-Produtos.png)
