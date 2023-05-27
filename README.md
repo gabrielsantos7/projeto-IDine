@@ -75,5 +75,3 @@ Este projeto está licenciado sob a [Licença MIT](https://opensource.org/licens
 ## Imagens de algumas páginas🖼️
 
 ![Página Principal](https://i.postimg.cc/CKLr6MK7/IDine-Home.png)
-
-![Página Produtos](https://i.postimg.cc/RFWs4PKn/IDine-Produtos.png)
