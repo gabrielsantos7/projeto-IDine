@@ -72,6 +72,6 @@ Para executar o Projeto-IDine, siga as instruções abaixo:
 
 Este projeto está licenciado sob a [Licença MIT](https://opensource.org/licenses/MIT). Consulte o link para obter mais informações.
 
-## Imagens de algumas páginas🖼️
+## Imagem da Página Principal🖼️
 
 ![Página Principal](https://i.postimg.cc/CKLr6MK7/IDine-Home.png)
