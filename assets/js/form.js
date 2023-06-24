@@ -12,6 +12,39 @@ form.addEventListener("submit", (e) => {
   checkInputs();
 });
 
+telephone.addEventListener("keyup", (event) => {
+  let inputValue = event.target.value;
+  let inputLength = inputValue.length;
+  let keyPressed = event.key;
+
+  // Verifica se a tecla pressionada é um número
+  if (!isNaN(keyPressed) && keyPressed !== " ") {
+    let formattedValue = inputValue;
+
+    // Verifica se o número tem pelo menos 2 dígitos para o DDD
+    if (inputLength === 2) {
+      formattedValue = `(${formattedValue}) `;
+    }
+    // Verifica se o número tem 8 dígitos (5 após o DDD) para adicionar o traço
+    else if (inputLength === 10) {
+      formattedValue += "-";
+    }
+
+    event.target.value = formattedValue;
+  }
+});
+
+telephone.addEventListener("keydown", (event) => {
+  let inputValue = event.target.value;
+  let inputLength = inputValue.length;
+
+  // Verifica se o número já tem 15 caracteres
+  if (inputLength === 15) {
+    event.preventDefault(); // Impede a digitação de mais caracteres
+    event.target.blur();
+  }
+});
+
 function checkInputs() {
   const usernameValue = username.value;
   const addressValue = address.value;
@@ -20,9 +53,9 @@ function checkInputs() {
 
   if (usernameValue === "") {
     setErrorFor(username, "O nome de usuário é obrigatório.");
-  } else if(usernameValue.length < 7) {
+  } else if (usernameValue.length < 7) {
     setErrorFor(username, "O nome de usuário deve ter 7 caracteres.");
-  }else{
+  } else {
     setSucessFor(username);
   }
 
@@ -41,7 +74,7 @@ function checkInputs() {
   }
   // (77) 99999-9999
   if (telephoneValue === "") {
-    setErrorFor(telephone, "o endereço de telefone é obrigatório.");
+    setErrorFor(telephone, "O número de telefone é obrigatório.");
   } else if (telephoneValue.length !== 14) {
     setErrorFor(telephone, "Coloque um número válido.(77) 99999-9999");
   } else {

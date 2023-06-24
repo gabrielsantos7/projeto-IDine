@@ -135,22 +135,16 @@
 }
 
 .form button {
-  position: absolute;
-  top: 94%;
-  left: 50%;
+  background-color: var(--vermelho);
   font-weight: 500;
-  transform: translate(-50%, -50%);
   border: none;
-  width: 35%;
-  padding: 10px;
+  width: 100%;
+  padding: 5% 10%;
   text-align: center;
-  color: #fff;
-  font-size: 16pt;
-  box-sizing: border-box;
-  background: linear-gradient(90deg, #f9879c, #8c60c5, #ffeb3b, #03a9f4);
-  background-size: 400%;
+  color: var(--branco-bg);
+  font-size: 1.5rem;
   border-radius: 10px;
-  z-index: 1;
+  transition: all 0.4s;
 
   -moz-user-select: none;
   -webkit-user-select: none;
@@ -159,8 +153,8 @@
 }
 
 .form button:hover {
-  animation: animate 8s linear infinite;
   cursor: pointer;
+  background-color: #cd1521;
 }
 
 @keyframes animate {
